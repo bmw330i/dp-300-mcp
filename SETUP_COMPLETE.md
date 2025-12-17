@@ -174,13 +174,13 @@ cd /Users/david/Documents/dp-300-mcp
 git status
 
 # Check for secrets (should find none!)
-grep -r "112a441d" .  # Your subscription ID
-grep -r "5Gv8Q" .     # Your client secret
+grep -r "YOUR_SUBSCRIPTION_ID" .  # Replace with your actual subscription ID
+grep -r "YOUR_CLIENT_SECRET" .     # Replace with part of your client secret
 
 # If clean, push to GitHub
 git add .
 git commit -m "Initial commit: DP-300 MCP Server and study materials"
-git remote add origin https://github.com/onefastdaddy/dp-300-mcp.git
+git remote add origin https://github.com/YOUR_USERNAME/dp-300-mcp.git
 git push -u origin main
 ```
 
@@ -240,7 +240,7 @@ Also remove from `~/.zshrc`.
 
 Before making public:
 
-- [ ] Verified no secrets in any file: `grep -r "5Gv8Q" .`
+- [ ] Verified no secrets in any file: `grep -r "YOUR_SECRET" .`
 - [ ] Tested MCP server locally: `node azure-mcp-server/index.js`
 - [ ] Updated README.md with your GitHub username
 - [ ] Added meaningful commit messages

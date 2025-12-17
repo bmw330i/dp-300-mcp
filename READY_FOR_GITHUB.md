@@ -11,9 +11,9 @@ Your secure, public-ready DP-300 Azure MCP Server repository is ready at:
 
 ### ✅ All Secrets Removed from Repository
 ```bash
-$ grep -r "112a441d\|5Gv8Q" . | grep -v ".git"
-# Only found in SETUP_COMPLETE.md as grep command examples
-# No actual secrets in any code files!
+$ grep -r "SUBSCRIPTION_ID\|CLIENT_SECRET" . | grep -v ".git"
+# Should return no matches in code files
+# Only placeholders in example/template files
 ```
 
 ### ✅ Credentials Stored Securely in ~/.zshrc
@@ -95,7 +95,7 @@ git add .
 git commit -m "Initial commit: DP-300 Azure MCP Server for certification practice"
 
 # Create GitHub repo first, then:
-git remote add origin https://github.com/onefastdaddy/dp-300-mcp.git
+git remote add origin https://github.com/YOUR_USERNAME/dp-300-mcp.git
 git branch -M main
 git push -u origin main
 ```
@@ -289,7 +289,7 @@ git push -u origin main
 **Check for secrets (should be 0):**
 ```bash
 cd ~/Documents/dp-300-mcp
-grep -r "5Gv8Q" . 2>/dev/null | grep -v ".git" | wc -l
+grep -r "YOUR_SECRET_PREFIX" . 2>/dev/null | grep -v ".git" | wc -l
 ```
 
 ---
