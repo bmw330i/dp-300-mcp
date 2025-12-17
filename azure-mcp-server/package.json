@@ -1,0 +1,25 @@
+{
+  "name": "azure-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for Azure resource management and DP-300 practice",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "mcp",
+    "azure",
+    "dp300",
+    "sql"
+  ],
+  "author": "David",
+  "license": "ISC",
+  "dependencies": {
+    "@azure/arm-resources": "^7.0.0",
+    "@azure/arm-sql": "^10.0.0",
+    "@azure/arm-monitor": "^8.0.0-beta.6",
+    "@azure/identity": "^4.13.0",
+    "@modelcontextprotocol/sdk": "^1.0.4"
+  }
+}
